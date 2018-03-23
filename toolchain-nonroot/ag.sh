@@ -6,7 +6,7 @@ library_path libpcre
 pushd "$BUILD_HOME"
 
 # ag
-wget -O ag.tar.gz https://github.com/ggreer/the_silver_searcher/archive/0.32.0.tar.gz
+wget -O ag.tar.gz https://github.com/ggreer/the_silver_searcher/archive/2.1.0.tar.gz
 tar zxf ag.tar.gz
 SRC_DIR=$(find . -maxdepth 1 -type d -name "*silver*")
 pushd "$SRC_DIR"
