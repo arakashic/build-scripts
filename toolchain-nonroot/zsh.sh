@@ -4,8 +4,8 @@ source common.sh
 
 pushd "$BUILD_HOME"
 
-wget -O zsh-5.5.1.zip "https://github.com/zsh-users/zsh/archive/zsh-5.5.1.zip"
-unzip zsh-5.5.1.zip
+wget -O zsh-stable.zip "https://github.com/zsh-users/zsh/archive/zsh-5.8.tar.gz"
+unzip zsh-stable.zip
 SRC_DIR=$(find . -maxdepth 1 -type d -name "zsh*")
 pushd "$SRC_DIR"
 ./Util/preconfig
