@@ -6,8 +6,8 @@ library_path libevent
 pushd "$BUILD_HOME"
 
 # tmux
-wget https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz
-tar zxf tmux-2.7.tar.gz
+wget "https://github.com/tmux/tmux/releases/download/3.2/tmux-3.2.tar.gz"
+tar zxf tmux-3.2.tar.gz
 SRC_DIR=$(find . -maxdepth 1 -type d -name "tmux*")
 pushd "$SRC_DIR"
 ./configure --prefix="$LR/tmux"
