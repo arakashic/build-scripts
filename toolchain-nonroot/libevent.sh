@@ -5,7 +5,7 @@ source common.sh
 pushd "$BUILD_HOME"
 
 # libevent
-wget https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
+wget "https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz"
 find . -maxdepth 1 -name "libevent-*.tar.gz" -exec tar zxf {} \;
 SRC_DIR=$(find . -maxdepth 1 -type d -name "libevent*")
 pushd "$SRC_DIR"
