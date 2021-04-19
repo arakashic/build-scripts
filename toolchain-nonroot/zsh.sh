@@ -4,7 +4,7 @@ source common.sh
 
 pushd "$BUILD_HOME"
 
-wget -O zsh-stable.zip "https://github.com/zsh-users/zsh/archive/zsh-5.8.tar.gz"
+wget -O zsh-stable.zip "https://github.com/zsh-users/zsh/archive/refs/tags/zsh-5.8.zip"
 unzip zsh-stable.zip
 SRC_DIR=$(find . -maxdepth 1 -type d -name "zsh*")
 pushd "$SRC_DIR"
